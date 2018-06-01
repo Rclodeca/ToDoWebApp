@@ -33,22 +33,18 @@ function addListAfterKeypress(event) {
 }
 
 function toggleDoneAfterClick() {
-	//if (event.target.className = 'delete') console.log('yo');
 	event.target.classList.toggle("done");
-	console.log("hi");
 }
 
 function deleteListElement() {
 	event.target.parentNode.remove();
 	event.target.remove();
-	console.log("deleteing");
 }
 
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
-//deleteButtons[2].addEventListener("click", deleteListElement);
 
 for(var i = 0; i < lis.length; i++) {
 	var anchor = lis[i];
